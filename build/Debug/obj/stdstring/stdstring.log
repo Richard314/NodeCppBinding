@@ -1,0 +1,28 @@
+﻿Build started 15/02/2015 11:51:26.
+     1>Project "D:\Workspaces\MyNodeModule1\build\stdstring.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Richard\.node-gyp\0.10.33\src" /I"C:\Users\Richard\.node-gyp\0.10.33\deps\uv\include" /I"C:\Users\Richard\.node-gyp\0.10.33\deps\v8\include" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D BUILDING_V8_SHARED=1 /D BUILDING_UV_SHARED=1 /D BUILDING_NODE_EXTENSION /D DEBUG /D _DEBUG /D _WINDLL /GF /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\obj\stdstring\\" /Fd"Debug\obj\stdstring\vc120.pdb" /Gd /TP /wd4251 /errorReport:prompt ..\addon.cc ..\stdstring.cc
+         addon.cc
+     1>c1xx : fatal error C1083: Cannot open source file: '..\addon.cc': No such file or directory
+         stdstring.cc
+     1>d:\workspaces\mynodemodule1\stdstring.h(16): error C2955: 'v8::Handle' : use of class template requires template argument list
+                 C:\Users\Richard\.node-gyp\0.10.33\deps\v8\include\v8.h(174) : see declaration of 'v8::Handle'
+     1>d:\workspaces\mynodemodule1\stdstring.h(16): error C2556: 'v8::Handle STDStringWrapper::New(const v8::Arguments &)' : overloaded function differs only by return type from 'v8::Handle<v8::Value> STDStringWrapper::New(const v8::Arguments &)'
+                 d:\workspaces\mynodemodule1\stdstring.h(14) : see declaration of 'STDStringWrapper::New'
+     1>d:\workspaces\mynodemodule1\stdstring.h(16): error C2371: 'STDStringWrapper::New' : redefinition; different basic types
+                 d:\workspaces\mynodemodule1\stdstring.h(14) : see declaration of 'STDStringWrapper::New'
+     1>..\stdstring.cc(3): error C2039: 'constructor' : is not a member of 'STDStringWrapper'
+                 d:\workspaces\mynodemodule1\stdstring.h(7) : see declaration of 'STDStringWrapper'
+     1>..\stdstring.cc(35): error C2601: 'STDStringWrapper::add' : local function definitions are illegal
+                 ..\stdstring.cc(33): this line contains a '{' which has not yet been matched
+     1>..\stdstring.cc(40): error C2601: 'STDStringWrapper::add' : local function definitions are illegal
+                 ..\stdstring.cc(25): this line contains a '{' which has not yet been matched
+     1>..\stdstring.cc(51): error C2601: 'STDStringWrapper::toString' : local function definitions are illegal
+                 ..\stdstring.cc(25): this line contains a '{' which has not yet been matched
+     1>..\stdstring.cc(58): fatal error C1075: end of file found before the left brace '{' at '..\stdstring.cc(25)' was matched
+         Generating Code...
+     1>Done Building Project "D:\Workspaces\MyNodeModule1\build\stdstring.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:25.07
